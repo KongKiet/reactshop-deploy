@@ -25,7 +25,9 @@ const TopMenu = (props) => {
     return (
         <div>
             <Navbar color="light" light expand="md">
-                <NavbarBrand href="/">Home</NavbarBrand>
+                <NavbarBrand><Link to="/">
+                                   Home
+                            </Link></NavbarBrand>
                 <Collapse navbar>
                     <Nav className="mr-auto" navbar>
                         <NavItem>
