@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "849624e9fe6ffb3ba2482e9abbbd4aab",
+    "revision": "8bf158229c07f53747ce2398b72f16b9",
     "url": "/reactshop-deploy/index.html"
   },
   {
-    "revision": "cce6576a29272cc18d81",
+    "revision": "c943082fbac264cc5493",
     "url": "/reactshop-deploy/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "fe3f4f79f92f8874b2b6",
+    "revision": "edf232adcc37630aa34c",
     "url": "/reactshop-deploy/static/css/main.fee873d0.chunk.css"
   },
   {
-    "revision": "cce6576a29272cc18d81",
-    "url": "/reactshop-deploy/static/js/2.8be6c699.chunk.js"
+    "revision": "c943082fbac264cc5493",
+    "url": "/reactshop-deploy/static/js/2.ef96b65b.chunk.js"
   },
   {
     "revision": "d2966845b94a3318bf32eecc7af8015d",
-    "url": "/reactshop-deploy/static/js/2.8be6c699.chunk.js.LICENSE.txt"
+    "url": "/reactshop-deploy/static/js/2.ef96b65b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fe3f4f79f92f8874b2b6",
-    "url": "/reactshop-deploy/static/js/main.03f38422.chunk.js"
+    "revision": "edf232adcc37630aa34c",
+    "url": "/reactshop-deploy/static/js/main.8b8799c3.chunk.js"
   },
   {
     "revision": "ea82f49a119daec03f14",
