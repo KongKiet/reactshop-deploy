@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/reactshop-deploy/static/css/main.fee873d0.chunk.css",
-    "main.js": "/reactshop-deploy/static/js/main.8b8799c3.chunk.js",
-    "main.js.map": "/reactshop-deploy/static/js/main.8b8799c3.chunk.js.map",
+    "main.js": "/reactshop-deploy/static/js/main.1ece88cb.chunk.js",
+    "main.js.map": "/reactshop-deploy/static/js/main.1ece88cb.chunk.js.map",
     "runtime-main.js": "/reactshop-deploy/static/js/runtime-main.8bd09f63.js",
     "runtime-main.js.map": "/reactshop-deploy/static/js/runtime-main.8bd09f63.js.map",
     "static/css/2.de424728.chunk.css": "/reactshop-deploy/static/css/2.de424728.chunk.css",
     "static/js/2.ef96b65b.chunk.js": "/reactshop-deploy/static/js/2.ef96b65b.chunk.js",
     "static/js/2.ef96b65b.chunk.js.map": "/reactshop-deploy/static/js/2.ef96b65b.chunk.js.map",
     "index.html": "/reactshop-deploy/index.html",
-    "precache-manifest.e2fd1be0c058aeadd011dda465870fc5.js": "/reactshop-deploy/precache-manifest.e2fd1be0c058aeadd011dda465870fc5.js",
+    "precache-manifest.8d90cbb749c90a2b499ad79365f93d5d.js": "/reactshop-deploy/precache-manifest.8d90cbb749c90a2b499ad79365f93d5d.js",
     "service-worker.js": "/reactshop-deploy/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/reactshop-deploy/static/css/2.de424728.chunk.css.map",
     "static/css/main.fee873d0.chunk.css.map": "/reactshop-deploy/static/css/main.fee873d0.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.de424728.chunk.css",
     "static/js/2.ef96b65b.chunk.js",
     "static/css/main.fee873d0.chunk.css",
-    "static/js/main.8b8799c3.chunk.js"
+    "static/js/main.1ece88cb.chunk.js"
   ]
 }
