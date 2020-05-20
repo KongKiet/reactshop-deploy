@@ -3,7 +3,7 @@ import {
     Container, Row, Col, Card, CardImg, CardText, CardBody,
     CardTitle, Button
 } from 'reactstrap';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import * as actions from './../../actions/index';
 import ControlSearch from './../../components/Control/ControlSearch';
 import './ProductListShowContainer.css';
@@ -22,36 +22,40 @@ class ProductListShowContainer extends Component {
     }
 
     render() {
-        var {products, keyword} = this.props; //truy xuất được các thành phần trong product thông qua biến state
+        var { products, keyword } = this.props; //truy xuất được các thành phần trong product thông qua biến state
+        var loadProduct = products;
         //search
         products = products.filter((product) => {
             return product.name.toLowerCase().indexOf(keyword.toLowerCase()) !== -1
         });
 
         var elmProducts;
-        if (products.length === 0) {
+        if (loadProduct.length === 0) {
+            elmProducts = <Col><h5>Đang load sản phẩm vui lòng đợi...</h5></Col>
+        } else if (products.length === 0) {
             elmProducts = <Col><h5>Không có sản phẩm tìm kiếm</h5></Col>
         } else {
             elmProducts = products.map((product, index) => {
-                return  <Col key = {index} sm="3">
+                return <Col key={index} sm="3">
                     <Card>
                         <CardImg top width="100%"
-                            className = "img"
+                            className="img"
                             src={product.imageUrl}
                             alt="Card image cap" />
                         <CardBody>
                             <CardTitle>{product.name}</CardTitle>
                             <CardText>{product.price} $</CardText>
-                            {product.status ? <Button onClick = {() => this.onAddToCart(product)} color="success" > Thêm vào giỏ <FontAwesomeIcon icon={faCartPlus} /> </Button> : <CardTitle>Hết hàng</CardTitle>}
+                            {product.status ? <Button onClick={() => this.onAddToCart(product)} color="success" > Thêm vào giỏ <FontAwesomeIcon icon={faCartPlus} /> </Button> : <CardTitle>Hết hàng</CardTitle>}
                         </CardBody>
                     </Card>
                 </Col>
             });
         }
 
+
         return (
             <Container>
-                <Row className = "mtop-15">
+                <Row className="mtop-15">
                     <Col>
                         <h2>Danh sách sản phẩm</h2>
                     </Col>
@@ -68,20 +72,20 @@ class ProductListShowContainer extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        products : state.products,
-        keyword : state.search,
+        products: state.products,
+        keyword: state.search,
     }
 }
 
 const mapDispatchToProps = (dispatch, props) => {
     return {
-        fetchAllItems : () => {
+        fetchAllItems: () => {
             dispatch(actions.listAllRequest());
         },
-        onAddToCart : (item) => {
+        onAddToCart: (item) => {
             dispatch(actions.addToCart(item))
         }
     }
 }
 
-export default  connect(mapStateToProps, mapDispatchToProps)(ProductListShowContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(ProductListShowContainer);
